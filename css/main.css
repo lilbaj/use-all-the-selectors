@@ -18,7 +18,7 @@ nav ul {
   background-color: #eee8d5;
 }
 
-contents, favs, facts, types {
+#contents, #favs, #facts, #types {
   color: #93a1a1;
 }
 
@@ -26,19 +26,15 @@ contents, favs, facts, types {
   background-color: #b58900;
 }
 
-.dfn + p {
+#facts .dfn strong:nth-of-type(2) {
   color: #fff;
 }
 
-a {
+a:not(.no-highlight) {
   background-color: #719e07;
 }
 
-.no-highlight {
-  background-color: none;
-}
-
-li a rel="external" {
+a .no-highlight:nth-of-type(3) {
   background-color: #2694d8;
 }
 
@@ -58,6 +54,6 @@ ol li:last-child {
   background-color: #586e75;
 }
 
-.types li:nth-child(3) {
-  backgrpound-color: #d04b16;
+.types li:nth-of-type(3) {
+  background-color: #d04b16;
 }
